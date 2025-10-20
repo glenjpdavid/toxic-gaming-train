@@ -1,0 +1,45 @@
+[GLM] Toxic Production (Binomial, proportion with trials)
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:                 p_prod   No. Observations:                  399
+Model:                            GLM   Df Residuals:                     3402
+Model Family:                Binomial   Df Model:                            5
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -420.48
+Date:                Sun, 19 Oct 2025   Deviance:                       368.35
+Time:                        20:22:19   Pearson chi2:                     531.
+No. Iterations:                    10   Pseudo R-squ. (CS):            0.02040
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------
+Intercept      -3.2083      0.153    -21.021      0.000      -3.507      -2.909
+in_uwdeg        0.0005      0.003      0.166      0.868      -0.005       0.006
+out_uwdeg       0.0086      0.039      0.222      0.824      -0.067       0.084
+betweenness    18.3591     28.645      0.641      0.522     -37.783      74.501
+eigenvector    -9.8336      7.900     -1.245      0.213     -25.317       5.650
+comments       -0.0163      0.027     -0.601      0.548      -0.069       0.037
+===============================================================================
+
+[GLM] Toxic Replies Received (Binomial, proportion with trials)
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:                 p_recv   No. Observations:                  450
+Model:                            GLM   Df Residuals:                     6927
+Model Family:                Binomial   Df Model:                            5
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:            -2.7217e-09
+Date:                Sun, 19 Oct 2025   Deviance:                   5.4434e-09
+Time:                        20:22:19   Pearson chi2:                 2.72e-09
+No. Iterations:                    27   Pseudo R-squ. (CS):                nan
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------
+Intercept     -28.5661    1.7e+04     -0.002      0.999   -3.34e+04    3.34e+04
+in_uwdeg    -7.624e-16    161.715  -4.71e-18      1.000    -316.955     316.955
+out_uwdeg   -4.219e-15   6692.871   -6.3e-19      1.000   -1.31e+04    1.31e+04
+betweenness  3.126e-13   2.01e+06   1.55e-19      1.000   -3.94e+06    3.94e+06
+eigenvector  3.197e-14   1.67e+05   1.91e-19      1.000   -3.28e+05    3.28e+05
+comments     1.735e-14   5041.169   3.44e-18      1.000   -9880.510    9880.510
+===============================================================================
