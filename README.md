@@ -13,13 +13,16 @@ Using over 550,641 Reddit posts and comments from nine gaming communities, conte
 
 ## 📁 Repository Structure
 
-* **`data/`**: Directory for raw and processed datasets (Ignored in `.gitignore`)
-* **`notebooks/`**:
-  * `01_data_extraction.ipynb` - Arctic Shift ingestion and preprocessing
-  * `02_nlp_classification.ipynb` - Execution of OpenAI API and Detoxify scoring
-  * `03_thread_analysis.ipynb` - Contagion modeling and cascade structure
-  * `04_user_networks.ipynb` - Assortativity and centrality-toxicity mapping
-* **`requirements.txt`**: Python dependencies
+* **`code/`**: Scripts for data processing, extraction, and modeling
+* **`figure/`**: Generated results, figures, and plots from the analysis
+* **`notebooks/`**: Jupyter notebooks for execution and statistical analysis
+* **`results/`**: Output data, metrics, and statistical results
+* **`trees/`**: Conversation tree structures for each analyzed subreddit
+* **`user_reply_networks/`**: User-reply network graphs and centrality data
+* **`data_clean`**: Processed and cleaned datasets
+* **`models`**: Toxicity classification models and outputs
+* **`notes`**: Project notes and rough documentation
+* **`.gitignore`**: Git ignore rules
 * **`README.md`**: Project documentation
 
 ## 🚀 How to Run
@@ -35,6 +38,7 @@ It is recommended to use a virtual environment.
 ```bash
 pip install -r requirements.txt
 ```
+*(Note: Ensure your `requirements.txt` is present or update this step based on your actual dependency manager).*
 
 3. **API Keys:**
 To run the NLP classification models, you will need to add your OpenAI API key to a `.env` file in the root directory:
@@ -42,8 +46,8 @@ To run the NLP classification models, you will need to add your OpenAI API key t
 OPENAI_API_KEY=your_key_here
 ```
 
-4. **Execute Notebooks:**
-Run the notebooks in the `notebooks/` directory in sequential order to replicate the data extraction, classification, and statistical analysis steps.
+4. **Execute Code:**
+Run the relevant scripts in the `code/` directory or notebooks in the `notebooks/` directory to replicate the data extraction, classification, and statistical analysis steps.
 
 ## ✍️ Authors & Acknowledgements
 
