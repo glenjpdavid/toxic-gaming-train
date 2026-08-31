@@ -29,14 +29,13 @@ Network Graph Analysis: Construction of thread-level reply trees and user-reply 
 Note: The following structure outlines the primary execution flow of the project's codebase.
 
 ├── data/                       # Directory for raw and processed datasets (Ignored in .gitignore)
-├── notebooks/                  
-│   ├── 01_data_extraction.ipynb   # Arctic Shift ingestion and preprocessing
-│   ├── 02_nlp_classification.ipynb# Execution of OpenAI API and Detoxify scoring
-│   ├── 03_thread_analysis.ipynb   # Contagion modeling and cascade structure
-│   └── 04_user_networks.ipynb     # Assortativity and centrality-toxicity mapping
+├── notebooks/
+│   ├── 01_data_extraction.ipynb      # Arctic Shift ingestion and preprocessing
+│   ├── 02_nlp_classification.ipynb   # Execution of OpenAI API and Detoxify scoring
+│   ├── 03_thread_analysis.ipynb      # Contagion modeling and cascade structure
+│   └── 04_user_networks.ipynb        # Assortativity and centrality-toxicity mapping
 ├── requirements.txt            # Python dependencies
 └── README.md                   # Project documentation
-
 🚀 How to Run
 Clone the repository:
 Bash
